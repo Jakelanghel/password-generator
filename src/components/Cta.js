@@ -23,7 +23,10 @@ const Cta = (props) => {
                 />
 
                 <button onClick={props.handleClick}>
-                    <img src='./images/bolt-solid.svg' alt='bolt icon' />
+                    <img
+                        src='./password-generator/images/bolt-solid.svg'
+                        alt='bolt icon'
+                    />
                     Generate passwords
                 </button>
             </div>

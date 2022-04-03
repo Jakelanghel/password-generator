@@ -57,6 +57,7 @@ function App() {
                 ...oldState,
                 passwords: passArr,
                 passGenerated: true,
+                passLength: 0,
             }));
         } else {
             setAppData((oldState) => ({
@@ -87,7 +88,10 @@ function App() {
     for (let i = 0; i < 4; i++) {
         loadingElements.push(
             <Password key={nanoid()}>
-                <img src='./images/ellipsis-solid.svg' alt='loading' />
+                <img
+                    src='./password-generator/images/ellipsis-solid.svg'
+                    alt='loading'
+                />
             </Password>
         );
     }
